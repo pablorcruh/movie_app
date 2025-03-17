@@ -1,0 +1,79 @@
+[versions]
+agp = "8.9.0"
+kotlin = "2.0.21"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.10.1"
+composeBom = "2024.09.00"
+timber_version = "5.0.1"
+retrofit_version = "2.9.0"
+okhttp_version = "4.11.0"
+okhttp_logging_version = "4.10.0"
+room_version = "2.6.1"
+accompanist_version = "0.27.0"
+splash_screen_version = "1.0.1"
+youtube_player_version = "0.28"
+dagger_hilt_version = "2.49"
+dagger_compose_navigation_version = "1.2.0"
+coil_version = "2.4.0"
+coroutines_version = "1.7.3"
+coroutines_lifecycle_version = "2.7.0"
+
+dagger_google-compiler_version = "2.44"
+dagger_android_compiler_version = "1.2.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+coroutines_core = {group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines_version"}
+coroutines_android = {group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines_version"}
+
+lifecycle_viewmodel = {group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "coroutines_lifecycle_version"}
+lifecycle_runtime = {group = "androidx.lifecycle", name = "lifecycle-runtime", version.ref = "coroutines_lifecycle_version"}
+timber = {group = "com.jakewharton.timber", name = "timber", version.ref="timber_version"}
+
+retrofit_retrofit = {group = "com.squareup.retrofit2", name = "retrofit", version.ref="retrofit_version"}
+retrofit_converter = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref="retrofit_version"}
+okhttp3 = {group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp_version"}
+okhttp_logging = {group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp_logging_version"}
+
+room = {group = "androidx.room", name = "room-ktx", version.ref="room_version"}
+room_paging = {group = "androidx.room", name = "room-paging", version.ref="room_version"}
+room_compiler = {group = "androidx.room", name= "room-compiler", version.ref="room_version"}
+
+dagger_hilt = {group = "com.google.dagger", name = "hilt-android", version.ref = "dagger_hilt_version"}
+dagger_compose_navigation = {group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "dagger_compose_navigation_version"}
+dagger_google_compiler = {group = "com.google.dagger", name = "hilt-compiler", version.ref = "dagger_google-compiler_version"}
+dagger_android_compiler = {group = "androidx.hilt", name = "hilt-compiler", version.ref = "dagger_android_compiler_version"}
+
+
+ui_controller  = {group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist_version"}
+
+splash =  {group = "androidx.core", name = "core-splashscreen", version.ref = "splash_screen_version"}
+
+youtube_player = {group = "com.pierfrancescosoffritti.androidyoutubeplayer", name = "chromecast-sender", version.ref = "youtube_player_version"}
+
+coil = {group = "io.coil-kt", name = "coil-compose", version.ref="coil_version"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+dagger-hilt = {id="com.google.dagger.hilt.android", version.ref="dagger_hilt_version"}
+
