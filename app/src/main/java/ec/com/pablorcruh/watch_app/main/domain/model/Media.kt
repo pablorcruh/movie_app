@@ -1,9 +1,11 @@
 package ec.com.pablorcruh.watch_app.main.domain.model
 
 data class Media(
+    val mediaId: Int,
+
     val adult: Boolean,
     val backdropPath: String,
-    val genres: List<String>,
+    val genreIds: List<String>,
     val mediaType: String,
     val originCountry: List<String>,
     val originalLanguage: String,
