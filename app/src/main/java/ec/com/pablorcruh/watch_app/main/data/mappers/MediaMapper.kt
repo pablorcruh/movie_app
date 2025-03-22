@@ -3,6 +3,7 @@ package ec.com.pablorcruh.watch_app.main.data.mappers
 import ec.com.pablorcruh.watch_app.main.data.local.MediaEntity
 import ec.com.pablorcruh.watch_app.main.data.remote.dto.MediaDto
 import ec.com.pablorcruh.watch_app.main.domain.model.Media
+import ec.com.pablorcruh.watch_app.util.APIConstants.MOVIE
 
 
 fun Media.toMediaEntity(): MediaEntity {

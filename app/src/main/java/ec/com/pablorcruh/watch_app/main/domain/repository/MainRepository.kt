@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface MainRepository {
 
-    suspend fun upsertMediaList(mediaEntities: List<Media>)
+    suspend fun upsertMediaList(mediaList: List<Media>)
 
     suspend fun upsertMediaItem(mediaItem: Media)
 

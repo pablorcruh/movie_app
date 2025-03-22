@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">watch-app</string>
+    <string name="could_not_load_data_from_remote">could not load data from remote</string>
 </resources>
