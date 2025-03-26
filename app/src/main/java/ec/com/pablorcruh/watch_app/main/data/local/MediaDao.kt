@@ -3,7 +3,6 @@ package ec.com.pablorcruh.watch_app.main.data.local
 import androidx.room.Dao
 import androidx.room.Query
 import androidx.room.Upsert
-import okhttp3.MediaType
 
 @Dao
 interface MediaDao {

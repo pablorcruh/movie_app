@@ -16,14 +16,14 @@ room_version = "2.6.1"
 accompanist_version = "0.27.0"
 splash_screen_version = "1.0.1"
 youtube_player_version = "0.28"
-dagger_hilt_version = "2.49"
-dagger_compose_navigation_version = "1.2.0"
 coil_version = "2.4.0"
 coroutines_version = "1.7.3"
 coroutines_lifecycle_version = "2.7.0"
 
-dagger_google-compiler_version = "2.44"
-dagger_android_compiler_version = "1.2.0"
+hiltAndroid = "2.55"
+hiltNavigationComposse = "1.0.0"
+
+ksp_version = "2.0.21-1.0.27"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -54,13 +54,13 @@ okhttp3 = {group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhtt
 okhttp_logging = {group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp_logging_version"}
 
 room = {group = "androidx.room", name = "room-ktx", version.ref="room_version"}
+room-runtime =  {group = "androidx.room", name = "room-compiler", version.ref="room_version"}
 room_paging = {group = "androidx.room", name = "room-paging", version.ref="room_version"}
-room_compiler = {group = "androidx.room", name= "room-compiler", version.ref="room_version"}
 
-dagger_hilt = {group = "com.google.dagger", name = "hilt-android", version.ref = "dagger_hilt_version"}
-dagger_compose_navigation = {group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "dagger_compose_navigation_version"}
-dagger_google_compiler = {group = "com.google.dagger", name = "hilt-compiler", version.ref = "dagger_google-compiler_version"}
-dagger_android_compiler = {group = "androidx.hilt", name = "hilt-compiler", version.ref = "dagger_android_compiler_version"}
+hilt-android = {group  = "com.google.dagger", name="hilt-android", version.ref="hiltAndroid"}
+hilt-compiler = {group = "com.google.dagger", name ="hilt-compiler", version.ref = "hiltAndroid"}
+hilt-navigation-compose = {group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationComposse"}
+
 
 
 ui_controller  = {group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist_version"}
@@ -75,5 +75,6 @@ coil = {group = "io.coil-kt", name = "coil-compose", version.ref="coil_version"}
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-dagger-hilt = {id="com.google.dagger.hilt.android", version.ref="dagger_hilt_version"}
-
+dagger-hilt-android = {id = "com.google.dagger.hilt.android", version.ref= "hiltAndroid"}
+kotlin-kapt ={id ="org.jetbrains.kotlin.kapt", version.ref = "kotlin"}
+ksp = {id = "com.google.devtools.ksp", version.ref = "ksp_version"}
